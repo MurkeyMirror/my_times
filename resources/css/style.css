@@ -2,6 +2,9 @@
 body {
   color: black;
   margin: 0px 0px;
+  font-family: Verdana;
+  font-size: 14px;
+  font-weight: bold;
   /* overrides the base CSS of the Firefox browser (likely the others as well) */
 }
 
@@ -17,9 +20,6 @@ header {
   z-index: 20;
   background-color: white;
   border-bottom: 1px solid black;
-  font-family: Verdana;
-  font-size: 14px;
-  font-weight: bold;
 }
 
 .logo {
@@ -42,6 +42,10 @@ nav {
 nav span {
   display: inline-block;
   padding: 20px 10px;
+}
+
+a {
+  color: black;
 }
 
 
