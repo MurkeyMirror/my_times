@@ -2,10 +2,19 @@
 body {
   color: black;
   margin: 0px 0px;
-  font-family: Verdana;
-  font-size: 14px;
-  font-weight: bold;
+  font-family: Georgia;
+  font-size: 17px;
+  color: black;
   /* overrides the base CSS of the Firefox browser (likely the others as well) */
+}
+
+h2 {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  font-family: Georgia;
+  font-size: 30px;
+  font-weight: bold;
+  font-style: normal;
 }
 
 
@@ -16,10 +25,13 @@ header {
   position: fixed;
   width: 100%;
   align-items: center;
-  height: 80px;
+  height: 79px;
   z-index: 20;
   background-color: white;
   border-bottom: 1px solid black;
+  font-family: Verdana;
+  font-size: 14px;
+  font-weight: bold;
 }
 
 .logo {
@@ -49,9 +61,171 @@ a {
 }
 
 
-
-
-
-
-
 /* Main body */
+
+.main-content {
+  padding-top: 120px;
+  display: flex;
+  width: 1232px;
+  /* auto for left and right margins will center it */
+  margin: 0px auto 80px auto;
+}
+
+.column {
+  /* temporary border around column divs for visibility */
+  /*border: 1px solid black;*/
+  display: inline-flex;
+}
+
+.small-stories .text-content {
+  height: 250px;
+}
+
+.image-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 300px;
+  font-family: Georgia;
+  font-weight: bold;
+  font-size: 30px;
+  text-align: center;
+  color: white;
+  margin-top: 15px;
+}
+
+.column {
+  margin-right: 30px;
+}
+
+
+/* left column */
+
+.column.large {
+  width: 630px;
+  display: flex;
+  flex-direction: column;
+}
+
+.big-story .image-content {
+  background-image: url("../images/main-story.png");
+  font-size: 40px;
+  width: 630px;
+  text-align: left;
+  margin-top: 0px;
+}
+
+.big-story .image-content span {
+  margin-left: 25px;
+}
+
+.small-stories {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.small-story {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+}
+
+.fall-season.image-content {
+  background-image: url("../images/fall-season.png");
+}
+
+.hipster-cameraman.image-content {
+  background-image: url("../images/hipster-cameraman.png");
+}
+
+/* middle column */
+
+.column.medium {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+}
+
+.column.medium .image-content {
+  background-image: url("../images/cat-ceo.png");
+}
+
+/* right column */
+
+.column.small {
+  width: 240px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.news-bites {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.news-bites h3 {
+  font-size: 16px;
+  font-weight: bold;
+  text-align: left;
+  text-align: center;
+}
+
+#top-newsbite {
+  border-top: 1px solid black;
+}
+
+.news-bites .news-bite {
+  display: inline-block;
+  color: DimGray;
+  background-color: WhiteSmoke;
+  border-bottom: 1px solid black;
+  padding: 10px 20px;
+  font-size: 12px;
+  font-family: Verdana;
+}
+
+
+/* footer */
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 350px;
+  width: 100%;
+  font-size: 12px;
+  font-family: Verdana;
+  font-weight: normal;
+  background-color: MediumAquamarine;
+  margin: auto;
+  font-family: Verdana;
+  font-size: 12px;
+}
+
+footer .info {
+
+}
+
+footer .info > span {
+  color: white;
+  padding-right: 10px;
+  border-right: 2px solid white;
+  font-family: Georgia;
+  font-size: 16px;
+}
+
+footer span {
+  display: inline-block;
+  font-family: Verdana;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+footer nav {
+  display: inline-block;
+  padding-left: 20px;
+}
