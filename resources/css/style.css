@@ -1,10 +1,53 @@
 
+body {
+  color: black;
+  margin: 0px 0px;
+  /* overrides the base CSS of the Firefox browser (likely the others as well) */
+}
+
+
+/* Header */
+
 header {
+  display: flex;
+  position: fixed;
+  width: 100%;
+  align-items: center;
+  height: 80px;
+  z-index: 20;
+  background-color: white;
+  border-bottom: 1px solid black;
   font-family: Verdana;
   font-size: 14px;
   font-weight: bold;
 }
 
-#logo {
+.logo {
   color: MediumAquamarine;
+  padding-left: 30px;
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+  /* bc width is 100%, screen "stretches" to the right, which logo eats all of */
 }
+
+.logo > img {
+  margin-right: 12px;
+}
+
+nav {
+  padding-right: 30px;
+}
+
+nav span {
+  display: inline-block;
+  padding: 20px 10px;
+}
+
+
+
+
+
+
+
+/* Main body */
